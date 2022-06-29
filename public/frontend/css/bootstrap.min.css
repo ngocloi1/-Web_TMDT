@@ -955,7 +955,8 @@ h3, .h3 {
 	font-size: 24px
 }
 h4, .h4 {
-	font-size: 18px
+	font-size: 18px;
+    color: red;
 }
 h5, .h5 {
 	font-size: 14px

@@ -4598,6 +4598,7 @@ button.button span {
 	font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: 1px;
+    color: red;
 }
 .category-title {
 	padding: 0px 0px 10px 0px;
@@ -8072,7 +8073,7 @@ button.button.btn-proceed-checkout span {
 	margin: auto;
 	background-color: #fff;
 	padding-top: 10px;
-	padding-bottom: 80px;
+	/*padding-bottom: 80px;*/
 }
 .page-not-found h2 {
 	color: #da2c2a;
@@ -9125,7 +9126,7 @@ a.button.wishlist {
 	width: 50px;
 }
 .footer-middle h4 {
-	color: #fff;
+	color: #ff0000;
 	font-family: 'Roboto', sans-serif;
 	font-size: 13px;
 	font-weight: bold;

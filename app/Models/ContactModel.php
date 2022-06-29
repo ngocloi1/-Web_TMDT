@@ -16,4 +16,8 @@ class ContactModel extends Model
 
     protected $fillable = ['name', 'email', 'phone', 'content'];
 
+    public static function orderBy(string $string, string $string1)
+    {
+    }
+
 }

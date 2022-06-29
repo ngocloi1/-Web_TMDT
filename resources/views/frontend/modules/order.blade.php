@@ -2,7 +2,6 @@
 @section('Content')
 
 
-
 <div class="container" style="min-height:500px">
 
     @if(Auth::check())
@@ -60,8 +59,8 @@
             <tr>
                 <td>{{$stt++}}</td>
                 <td>{{$item->product_name}}</td>
-                <td>{{$item->product_qty}}</td>
-                <td>{{number_format($item->product_price)}} .đ</td>
+                <td >{{$item->product_qty}}</td>
+                <td >{{number_format($item->product_price)}} .đ</td>
                 <td>{!!$item->product_preview!!}</td>
                 <td>{{number_format($item->product_qty * $item->product_price)}}.đ</td>
             </tr>

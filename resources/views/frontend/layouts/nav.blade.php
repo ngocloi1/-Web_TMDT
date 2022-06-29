@@ -25,7 +25,7 @@
                     </li>
                 </ul>
             </div>
-            <a class="logo-small" title="Magento Commerce" href="#"><img alt="Magento Commerce" src="{{asset('frontend/images/logo2.png')}}" width="100px"></a>
+            <a class="logo-small" title="Magento Commerce" href="#"><img alt="Magento Commerce" src="{{asset('frontend/images/z1.jpg')}}" width="100px"style="position: relative; bottom: 16px;"></a>
             <ul id="nav" class="hidden-xs">
                 <li class="level0 parent drop-menu"><a href="{{Route('index')}}" class="{{url()->current() == route('index')  ? 'active' : '' }}"><span>Trang chủ</span> </a> </li>
                 <li class="level0 parent drop-menu"><a href="{{Route('product')}} " class="{{url()->current() == route('product')  ? 'active' : '' }}"><span>Sản phẩm</span> </a> </a>

@@ -14,11 +14,11 @@
         <div class="col-sm-4 invoice-col">
             <Strong>CỬA HÀNG</Strong>
             <address>
-                <strong>DStore, Inc.</strong><br>
+                <strong>NL store</strong><br>
                 Thanh Hóa<br>
                 Việt Nam<br>
                 Phone: 0123456789<br>
-                Email: ngovietduc.nc@gmail.com
+                Email: loingocluxury@gmail.com
             </address>
         </div>
         <div class="col-sm-4 invoice-col">

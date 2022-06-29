@@ -14,11 +14,6 @@ class ProductController extends Controller
     {
         $this->middleware('auth');
     }
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index(Request $request)
     {
         $perPage = $request->has('perPage') ? $request->perPage : 5;
@@ -26,23 +21,12 @@ class ProductController extends Controller
         return view('backend.modules.products.index', ['listPro' => $data]);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function create()
     {
         $cat_items = CategoryModel::where('id_parent', '!=', 0)->get();
         return view('backend.modules.products.add', compact('cat_items'));
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request)
     {
         $this->validate(
@@ -127,24 +111,11 @@ class ProductController extends Controller
             ->with('message', $message)
             ->with('type_alert', $type_alert);
     }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function show($id)
     {
         //
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function edit($id)
     {
         $item = ProductModel::find($id);
@@ -152,13 +123,6 @@ class ProductController extends Controller
         return view('backend.modules.products.update', compact('item', 'cat_items'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function update(Request $request, $id)
     {
         $data_pro = ProductModel::find($id);
@@ -208,7 +172,7 @@ class ProductController extends Controller
             $file_name = time() . '-' . 'product.' . $ext;
             $file->move(public_path('upload'), $file_name);
             $request->merge(['image' => $file_name]);
-            
+
         }else{
             $file_name = $data_pro->image;
         }
