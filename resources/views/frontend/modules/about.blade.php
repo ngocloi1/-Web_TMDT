@@ -1,7 +1,7 @@
 @extends('frontend.layouts.master')
 @section('Content')
 
-<div class="container">
+<div class="container" style="color: red">
     Người Thực Hiện : Đỗ Ngọc Lợi <br>
     Framework Laravel <br>
     Language PHP<br>
