@@ -11,9 +11,9 @@
                             <div class="product-img-box col-lg-6 col-sm-6 col-xs-12">
                                 <ul class="moreview" id="moreview">
                                     @foreach ($data_detail as $item)
-                                    <li class="moreview_thumb"> 
-                                        <img class="moreview_thumb_image" src="{{url('upload')}}/{{$item->img}}"> 
-                                        <img class="moreview_source_image" src="{{url('upload')}}/{{$item->img}}" alt=""> 
+                                    <li class="moreview_thumb">
+                                        <img class="moreview_thumb_image" src="{{url('upload')}}/{{$item->img}}">
+                                        <img class="moreview_source_image" src="{{url('upload')}}/{{$item->img}}" alt="">
                                         <img style="position: absolute;" class="zoomImg" src="{{url('upload')}}/{{$item->img}}">
                                     </li>
                                     @endforeach
@@ -29,7 +29,7 @@
                                     <div class="rating-box">
                                         <div style="width:60%" class="rating"></div>
                                     </div>
-                                    <p class="rating-links"> <a href="#">1 Đánh giá</a> <span class="separator">|</span> <a href="#">Thêm đánh giá</a> </p>
+                                    <p class="rating-links"> <a href="">1 Đánh giá</a> <span class="separator">|</span> <a href="#">Thêm đánh giá</a> </p>
                                 </div>
                                 <p class="availability in-stock"><span>Còn hàng</span></p>
                                 <div class="price-block">
@@ -313,7 +313,7 @@
                                         <div class="clear"></div>
                                     </div>
                                 </div>
-                                
+
                             </div>
                         </div>
                         <div class="col-sm-12">

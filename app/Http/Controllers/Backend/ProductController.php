@@ -18,7 +18,7 @@ class ProductController extends Controller
     {
         $perPage = $request->has('perPage') ? $request->perPage : 5;
         $data = ProductModel::orderBy('created_at', 'DESC')->search()->paginate($perPage);
-        return view('backend.modules.products.index', ['listPro' => $data]);
+        return view('backend.modules.products.index', ['list' => $data]);
     }
 
     public function create()
@@ -218,13 +218,6 @@ class ProductController extends Controller
             ->with('message', $message)
             ->with('type_alert', $type_alert);
     }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function destroy($id)
     {
         $message = "";

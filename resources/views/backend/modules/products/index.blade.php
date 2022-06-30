@@ -55,10 +55,10 @@
                         <tbody id="load">
 
                             @php
-                            $stt = ($listPro->currentPage() - 1) * $listPro->perPage() ;
+                            $stt = ($list->currentPage() - 1) * $list->perPage() ;
                             @endphp
 
-                            @foreach ($listPro as $item)
+                            @foreach ($list as $item)
 
                             @php
                             $stt = $stt + 1 ;
@@ -91,11 +91,12 @@
                     </form>
 
                     <div class="card-footer clearfix">
-                        {!! $listPro->appends(Request::all())->links() !!}
+                        {!! $list->appends(Request::all())->links() !!}
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 </section>
 @endsection
 
@@ -112,5 +113,5 @@
 
     })
 
-</script>    
+</script>
 @endpush()

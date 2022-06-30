@@ -2710,7 +2710,7 @@ margin-right: 10px;
 	height: 15px;
 	font-size: 0;
 	line-height: 0;
-	background: url(../images/bkg_rating.png) 0 0 repeat-x;
+	background: url(../images/bkg_rating.png) 0 100% repeat-x;
 	text-indent: -999em;
 	overflow: hidden;
 }
